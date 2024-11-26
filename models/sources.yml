@@ -50,9 +50,61 @@ sources:
           - not_null 
       - name: Heart
         identifier: ischaemic_heart_diseases
+        description: dataset on the nb of death in EU by heart diases
+        columns:
+          - name: Country
+            description: The EU Country 
+          - name: Year
+            description: The timeline of the analysis 
+          - name: Value 
+            description: The death rate 
+          - name: maladie
+            description: the name of the diase 
+        tests:
+          - unique
+          - not_null
       - name: Nervous
         identifier: nervous_system
+        description: dataset on the nb of death in EU by nervous system
+        columns:
+          - name: Country
+            description: The EU Country 
+          - name: Year
+            description: The timeline of the analysis 
+          - name: Value 
+            description: The death rate 
+          - name: maladie
+            description: the name of the diase 
+        tests:
+          - unique
+          - not_null
       - name: Pneumonia
         identifier: pneumonia
+        description: dataset on the nb of death in EU by pneumonia
+        columns:
+          - name: Country
+            description: The EU Country 
+          - name: Year
+            description: The timeline of the analysis 
+          - name: Value 
+            description: The death rate 
+          - name: maladie
+            description: the name of the diase 
+        tests:
+          - unique
+          - not_null
       - name: Total
         identifier: total
+        description: dataset on the nb of death in EU 
+        columns:
+          - name: Country
+            description: The EU Country 
+          - name: Year
+            description: The timeline of the analysis 
+          - name: Value 
+            description: The death rate 
+          - name: maladie
+            description: the name of the diase 
+        tests:
+          - unique
+          - not_null
