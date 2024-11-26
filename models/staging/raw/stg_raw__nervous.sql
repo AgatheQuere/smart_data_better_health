@@ -9,7 +9,7 @@ with
  renamed as (
 
      select
-         TIME,
+         TIME as Country, #modifier le nom de la colonne par Country (car erreur dans BQ)
          Year,
          Value,
          maladie
@@ -19,3 +19,4 @@ with
  )
 
  select * from renamed
+ 
