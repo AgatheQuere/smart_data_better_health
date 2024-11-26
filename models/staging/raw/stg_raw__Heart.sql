@@ -19,3 +19,4 @@ with
  )
 
  select * from renamed
+ 
