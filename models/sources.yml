@@ -8,103 +8,171 @@ sources:
         description: dataset on the nb of death in EU by chronic liver diseases 
         columns:
           - name: Country
-            description: The EU Country 
+            description: The EU Country
+            tests:
+              - unique
+              - not_null 
           - name: Year
-            description: The timeline of the analysis 
+            description: The timeline of the analysis
+            tests:
+              - unique
+              - not_null  
           - name: Value 
             description: The death rate 
+            tests:
+              - unique
+              - not_null 
           - name: maladie
             description: the name of the diase 
-        tests:
-          - unique
-          - not_null 
+            tests:
+              - unique
+              - not_null 
       - name: THH
         identifier: Tuberculose_HIV_and_hepatitis
         description: dataset on the nb of death in EU by Tubercoluse, HIV and Hepatitis 
         columns:
           - name: Country
-            description: The EU Country 
+            description: The EU Country
+            tests:
+              - unique
+              - not_null 
           - name: Year
             description: The timeline of the analysis 
+            tests:
+              - unique
+              - not_null 
           - name: Value 
             description: The death rate 
+            tests:
+              - unique
+              - not_null 
           - name: maladie
-            description: the name of the diase 
-        tests:
-          - unique
-          - not_null 
+            description: the name of the diase
+            tests:
+              - unique
+              - not_null 
+        
       - name: cancer
         identifier: cancer
         description: dataset on the nb of death in EU by cancer 
         columns:
           - name: Country
             description: The EU Country 
+            tests:
+              - unique
+              - not_null
           - name: Year
             description: The timeline of the analysis 
+            tests:
+              - unique
+              - not_null
           - name: Value 
             description: The death rate 
+            tests:
+              - unique
+              - not_null
           - name: maladie
-            description: the name of the diase 
-        tests:
-          - unique
-          - not_null 
+            description: the name of the diase
+            tests:
+              - unique
+              - not_null
+        
       - name: Heart
         identifier: ischaemic_heart_diseases
         description: dataset on the nb of death in EU by heart diases
         columns:
           - name: Country
             description: The EU Country 
+            tests:
+              - unique
+              - not_null
           - name: Year
             description: The timeline of the analysis 
+            tests:
+              - unique
+              - not_null
           - name: Value 
             description: The death rate 
+            tests:
+              - unique
+              - not_null
           - name: maladie
             description: the name of the diase 
-        tests:
-          - unique
-          - not_null
+            tests:
+              - unique
+              - not_null
+       
       - name: Nervous
         identifier: nervous_system
         description: dataset on the nb of death in EU by nervous system
         columns:
           - name: Country
             description: The EU Country 
+            tests:
+              - unique
+              - not_null
           - name: Year
             description: The timeline of the analysis 
+            tests:
+              - unique
+              - not_null
           - name: Value 
             description: The death rate 
+            tests:
+              - unique
+              - not_null
           - name: maladie
             description: the name of the diase 
-        tests:
-          - unique
-          - not_null
+            tests:
+              - unique
+              - not_null
+       
       - name: Pneumonia
         identifier: pneumonia
         description: dataset on the nb of death in EU by pneumonia
         columns:
           - name: Country
             description: The EU Country 
+            tests:
+              - unique
+              - not_null
           - name: Year
-            description: The timeline of the analysis 
+            description: The timeline of the analysis
+            tests:
+              - unique
+              - not_null 
           - name: Value 
             description: The death rate 
+            tests:
+              - unique
+              - not_null
           - name: maladie
-            description: the name of the diase 
-        tests:
-          - unique
-          - not_null
+            description: the name of the diase
+            tests:
+              - unique
+              - not_null 
+
       - name: Total
         identifier: total
         description: dataset on the nb of death in EU 
         columns:
           - name: Country
             description: The EU Country 
+            tests:
+              - unique
+              - not_null
           - name: Year
-            description: The timeline of the analysis 
+            description: The timeline of the analysis
+            tests:
+              - unique
+              - not_null 
           - name: Value 
-            description: The death rate 
+            description: The death rate
+            tests:
+              - unique
+              - not_null
           - name: maladie
             description: the name of the diase 
-        tests:
-          - unique
-          - not_null
+            tests:
+              - unique
+              - not_null
