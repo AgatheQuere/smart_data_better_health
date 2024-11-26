@@ -16,8 +16,4 @@ sources:
       - name: Pneumonia
         identifier: pneumonia
       - name: Total
-<<<<<<< HEAD
         identifier: total
-=======
-        identifier: total
->>>>>>> 8f3648c277e4befdbb9f4e25f6d6733ce919dc6a
