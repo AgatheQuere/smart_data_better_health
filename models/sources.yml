@@ -5,10 +5,49 @@ sources:
     tables:
       - name: Liver
         identifier: Chronic_liver_disease
+        description: dataset on the nb of death in EU by chronic liver diseases 
+        columns:
+          - name: Country
+            description: The EU Country 
+          - name: Year
+            description: The timeline of the analysis 
+          - name: Value 
+            description: The death rate 
+          - name: maladie
+            description: the name of the diase 
+        tests:
+          - unique
+          - not_null 
       - name: THH
         identifier: Tuberculose_HIV_and_hepatitis
+        description: dataset on the nb of death in EU by Tubercoluse, HIV and Hepatitis 
+        columns:
+          - name: Country
+            description: The EU Country 
+          - name: Year
+            description: The timeline of the analysis 
+          - name: Value 
+            description: The death rate 
+          - name: maladie
+            description: the name of the diase 
+        tests:
+          - unique
+          - not_null 
       - name: cancer
         identifier: cancer
+        description: dataset on the nb of death in EU by cancer 
+        columns:
+          - name: Country
+            description: The EU Country 
+          - name: Year
+            description: The timeline of the analysis 
+          - name: Value 
+            description: The death rate 
+          - name: maladie
+            description: the name of the diase 
+        tests:
+          - unique
+          - not_null 
       - name: Heart
         identifier: ischaemic_heart_diseases
       - name: Nervous
