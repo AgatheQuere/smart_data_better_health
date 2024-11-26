@@ -153,9 +153,6 @@ sources:
               - not_null 
 
       - name: Total
-<<<<<<< HEAD
-        identifier: total
-=======
         identifier: total
         description: dataset on the nb of death in EU 
         columns:
@@ -179,4 +176,3 @@ sources:
             tests:
               - unique
               - not_null
->>>>>>> 17dc45c3a417e69d27632f5ca1d5c8853840186f
