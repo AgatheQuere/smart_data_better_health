@@ -45,21 +45,3 @@ models:
     marts:
       schema: marts
 
-sources:
-  - name: EU
-    schema: Eu_death
-    tables:
-      - name: Liver
-        identifier: Chronic_liver_disease
-      - name: THH
-        identifier: Tuberculose_HIV_and_hepatitis
-      - name: cancer
-        identifier: cancer
-      - name: Heart
-        identifier: ischaemic_heart_diseases
-      - name: Nervous
-        identifier: nervous_system
-      - name: Pneumonia
-        identifier: pneumonia
-      - name: Total
-        identifier: total

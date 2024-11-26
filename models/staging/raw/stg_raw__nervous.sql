@@ -9,7 +9,7 @@ with
  renamed as (
 
      select
-         TIME,
+         TIME as Country, -- Rename Time as country
          Year,
          Value,
          maladie
