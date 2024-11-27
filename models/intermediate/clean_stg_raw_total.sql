@@ -3,6 +3,6 @@
 -- Concatenation du nom du pays "Country" + "-" + de l'année "Year" similaire sur toutes les tables
 
 
-SELECT * ,
+SELECT *,
 CONCAT (Country, "_", Year) as Key
 FROM {{ref("stg_raw__total")}} 
