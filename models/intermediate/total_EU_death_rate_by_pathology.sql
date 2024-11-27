@@ -61,12 +61,12 @@ SELECT
 
 THH.Country,
 THH.Year,
-ROUND((THH.value/100000),4)*100 as death_rate_THH,
-ROUND((Heart.value/100000),4)*100 as death_rate_heart,
-ROUND((Cancer.value/100000),4)*100 as death_rate_cancer,
-ROUND((Liver.value/100000),4)*100 as death_rate_liver,
-ROUND((Nervous.value/100000),4)*100 as death_rate_nervous,
-ROUND((Pneumonia.value/100000),4)*100 as death_rate_pneumonia
+ROUND(((THH.value/100000)*100),6) as death_rate_THH,
+ROUND(((Heart.value/100000)*100),6) as death_rate_heart,
+ROUND(((Cancer.value/100000)*100),6) as death_rate_cancer,
+ROUND(((Liver.value/100000)*100),6) as death_rate_liver,
+ROUND(((Nervous.value/100000)*100),6) as death_rate_nervous,
+ROUND(((Pneumonia.value/100000)*100),6) as death_rate_pneumonia
 
 FROM Sub2 as THH 
 INNER JOIN Sub1 as Heart
