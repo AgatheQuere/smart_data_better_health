@@ -176,10 +176,3 @@ sources:
             tests:
               - unique
               - not_null
-
-  - name: depense
-    schema: depense_sante
-    tables:
-      - name: Ameli_depenses
-        identifier: Ameli_depenses_pathologies_france_2015 _2022
-        description: Jeu de données sur les dépenses de santé par pathologie en France de 2015 à 2022
