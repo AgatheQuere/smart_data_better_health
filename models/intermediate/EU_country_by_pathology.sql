@@ -6,8 +6,6 @@
 -- Jointure des tables sur la plus grande THH (environ 500 lignes), grâce à un INNER JOIN
 -- Attention : parti pris de faire le INNER pour une analyse plus homogène de nos résultats sur la même temporalité (à savoir 2011 à 2021)
 
--- ETAPE 3
--- Calcul du SDR European Standardised Death Rate = ROUND((THH.value/100000),4)*100 as death_rate_THH pour chaque cause de décès
 
 WITH Sub1 AS (
 
@@ -61,12 +59,12 @@ SELECT
 
 THH.Country,
 THH.Year,
-ROUND((THH.value/100000),4)*100 as death_rate_THH,
-ROUND((Heart.value/100000),4)*100 as death_rate_heart,
-ROUND((Cancer.value/100000),4)*100 as death_rate_cancer,
-ROUND((Liver.value/100000),4)*100 as death_rate_liver,
-ROUND((Nervous.value/100000),4)*100 as death_rate_nervous,
-ROUND((Pneumonia.value/100000),4)*100 as death_rate_pneumonia
+THH.value as THH_SDR,
+Heart.value as Heart_SDR,
+Cancer.value as Cancer_SDR,
+Liver.value as Liver_SDR,
+Nervous.value as Nervous_SDR,
+Pneumonia.value as Pneumonia_SDR
 
 FROM Sub2 as THH 
 INNER JOIN Sub1 as Heart
