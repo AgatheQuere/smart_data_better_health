@@ -1,4 +1,3 @@
-{{ config(materialized='table') }}
 select *
 from `effectif_pathologie_sexe_classe_age_territoire.effectif_pathologie`
 where sexe != 9 and patho_niv2 is not null 
