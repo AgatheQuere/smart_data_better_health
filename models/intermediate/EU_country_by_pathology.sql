@@ -59,7 +59,7 @@ SELECT
 
 THH.Country,
 THH.Year,
-THH.Key,
+THH.Key as commun_key,
 THH.value as THH_SDR,
 Heart.value as Heart_SDR,
 Cancer.value as Cancer_SDR,
