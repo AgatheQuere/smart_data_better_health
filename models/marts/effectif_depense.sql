@@ -12,6 +12,7 @@ e.libelle_classe_age,
 e.cla_age_5,
 e.libelle_sexe,
 
+ROUND(AVG(e.prev),2) AS prevalence,
 SUM(e.Ntop) AS nombre_pris_en_charge,
 SUM(e.Npop) AS population_susceptible,
 AVG(d.montant_moy) AS montant_moyen,
