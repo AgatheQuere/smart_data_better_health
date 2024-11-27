@@ -1,5 +1,4 @@
---ETAPE 1 : création d'une nouvelle table jointe avec les SDR de chaque pays EU_country_by_pathology // et le clean_stg_raw_total
--- ETAPE 2 : Calcul des taux de mortalité par maladie sur la base de l'étude du taux de mortalité des 65 causes (Tot_65_causes) = (THH_SDR/Tot_65causes_SDR)*100
+--ETAPE 1 : création de ma colonne moyenne de la population ainsi que mon calcul de nombre de mort rapporté à la population réelle
 
 SELECT *,
     CASE
@@ -37,4 +36,4 @@ SELECT *,
         WHEN Country = 'Iceland' THEN 339068 
         ELSE NULL
     END AS average_population
-FROM {{ref('total_EU_by_pathology')}} 
+    FROM {{ref('total_EU_by_pathology')}} 
