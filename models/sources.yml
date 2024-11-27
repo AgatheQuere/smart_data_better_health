@@ -191,9 +191,6 @@ sources:
         identifier: depistage_cancer_sein
         description: Jeu de données sur les données de dépistage pour le cancer du sein en France de 2005 à 2023
 
-  - name: depistage
-    schema: Depistage_cancer_FR
-    tables:
       - name: cancer_uterus
         identifier: depistage_cancer_uterus
         description: Jeu de données sur les données de dépistage pour le cancer de l'utérus en France de 2005 à 2020
