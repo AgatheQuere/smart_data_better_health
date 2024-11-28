@@ -9,3 +9,4 @@ select
     'cancer_uterus' as Cancer_type,
     *
 from {{ref("stg_depistage__depistage_cancer_uterus")}}
+
