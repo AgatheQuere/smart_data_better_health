@@ -176,3 +176,21 @@ sources:
             tests:
               - unique
               - not_null
+  
+  - name: depense
+    schema: depense_sante
+    tables:
+      - name: Ameli_depenses
+        identifier: Ameli_depenses_pathologies_france_2015 _2022
+        description: Jeu de données sur les dépenses de santé par pathologie en France de 2015 à 2022
+  
+  - name: Depistage_raw
+    schema: Depistage_cancer_FR
+    tables:
+      - name: depistage_cancer_sein
+        identifier: clean_depistage_cancer_sein
+        description: Jeu de données sur le dépistage du cancer du sein en France de 2005 à 2023
+      - name: depistage_cancer_uterus
+        identifier: clean_depistage_cancer_uterus
+        description: Jeu de données sur le dépistage du cancer de l'uterus en France de 2014 à 2020
+        
